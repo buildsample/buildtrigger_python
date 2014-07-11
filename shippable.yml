@@ -15,7 +15,7 @@ script:
     - echo "ne04j"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8455a71a2200f199b6/build?token=$SHIPPABLE_API_TOKEN
     - echo "postgres"
-    - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8455a71a2200f199b8/build?token=$SHIPPABLE_API_TOKEN
+    - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8555a71a2200f199b8/build?token=$SHIPPABLE_API_TOKEN
     - echo "rabbitmq"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8655a71a2200f199ba/build?token=$SHIPPABLE_API_TOKEN
     - echo "redis"
