@@ -2,26 +2,29 @@ language: python
 python:
     - 3.3
 script:
-    #sample_python
+    - echo "sample_python"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b7a55a71a2200f199aa/build?token=$SHIPPABLE_API_TOKEN
-    #sample_python_elasticsearch
+    - echo "sample_python_elasticsearch"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b7d55a71a2200f199ae/build?token=$SHIPPABLE_API_TOKEN
-    #sample_python_memcache
+    - echo "sample_python_memcache"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b7e55a71a2200f199b0/build?token=$SHIPPABLE_API_TOKEN
-    #mongodb
+    - echo "mongodb"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8155a71a2200f199b2/build?token=$SHIPPABLE_API_TOKEN
-    #mysql
+    - echo "mysql"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8355a71a2200f199b4/build?token=$SHIPPABLE_API_TOKEN
-    #ne04j
+    - echo "ne04j"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8455a71a2200f199b6/build?token=$SHIPPABLE_API_TOKEN
-    #postgres
+    - echo "postgres"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8455a71a2200f199b8/build?token=$SHIPPABLE_API_TOKEN
-    #rabbitmq
+    - echo "rabbitmq"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8655a71a2200f199ba/build?token=$SHIPPABLE_API_TOKEN
-    #redis
+    - echo "redis"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8d55a71a2200f199bc/build?token=$SHIPPABLE_API_TOKEN 
-    #sqlite
+    - echo "sqlite"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b8e55a71a2200f199be/build?token=$SHIPPABLE_API_TOKEN
-   #coveralls
+    - echo "coveralls"
     - curl -XPOST https://apibeta.shippable.com/projects/53bf6b7c55a71a2200f199ac/build?token=$SHIPPABLE_API_TOKEN
-
+    - echo "couchdb"
+    - curl -XPOST https://apibeta.shippable.com/projects/53bf745f55a71a2200f19e05/build?token=$SHIPPABLE_API_TOKEN
+    - echo "rethinkdb"
+    - curl -XPOST https://apibeta.shippable.com/projects/53bf6b6a55a71a2200f199a8/build?token=$SHIPPABLE_API_TOKEN
