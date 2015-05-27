@@ -5,9 +5,8 @@ python:
 env:
  global:
    - projectID=5556c112f4e45f525dcef44a
-   - secure: wvnOooIWUSJEFtF6eaO3iN54qcQXWqg2D1HkGe2s1b1VjUo4Sbd9jlYuVVv6TnOvGU4pQpM/iY13eRV+GnZdRB8n/UsDdQs3CfarDpM3m+qCvX6zKuoObp4GyXWPcMHrJXIzE+GYkveU8ifQbZGBkmsR2wq0eXRfokzDyPkQ3XXaZoLvlJ2Vkyw5PRFRXM+CmKVpBYJrCmH6XQV6JkgoTNk1o1myuAIUHLXjO2hDxMj73hImKLkcIQtD8uy4oAB9UELQRx7fo6tmUlNDuwhzWdhFcSm77U7MbC8f+k+2THGfIWMX0sQevf1Je+TB/8V9uYxitZDte0oJDbnpLHo39g==
-   #- secure: Xzw9S/FvxvLq7g7Awq3gpda+xVLtkiCWQHn+wiobgJ56bfr8NP7G0fyDTV2rJ1qUVp9qpKkdk8pGt5uo5ypbfn7RedgaP0+ENuwM3/bLB7YBVQl0UNWmkxhEA+phJbNRZ0ZlgQ13M3raInKKLr4H/FXvnFWUt3v5I/rTdr0iRLyvsEy4s++yHICd4T98jqjlguDY06NS5ZiYxy65DOIcd5sX26Ul2x7Iz6ufrCu6Mus+pHWW16jK1jnS8bYQS0VlhjH35slq3RFJOk9u9GtKN68aXmARqVcqMZEW1psC1fewyTo3wMPu3zf1fg7eBqG+KONdxkhywYfIWEjQYI4ceA==
-#- secure: RGfKHvNO3+qGXsLjCH7QPeEGzY5HYfICW4krJ0a5CnMPkmbpUJOUeS7TdMavwE+s7j/NJsdspfZQXl7WM0KS5Go21UdqL95ceDtg2TcLQxvNiLxmaLSMnvvXqF4YYNcyD4WDJNYd06pmKKIv3NSd7yLmCIGPV0AlN54IHRftlLwKe+jyZdoo0yWtW4M3qvkqtbLJu8v2sqCsHpB15JTWupCuihp9QU12wczKENOplp1gwP+d9J9Ds9Q3ZPzuzpmUR3aT39tWQzYnBcE3oPteDrgugOosHl1mRdK/YwsJ3A4aDUhLe985rOuknfRVoTtL+1X0FfN34/O2U5DEGjPTeg==
+   - secure: Bk/dspKsCtdNBR7bhYL1cex+FJ/My7W6a333wT65ZjMM2CRLTQNN3B6HN5pk2GXszaKWgklsyiUAf1c0XxqjGCuyevGvjeBIWJaJJGgtHnh29KP2xYtTba6o2S0dREbMNS1wmW2oTTwQVEIIshROdccBMNtqZYGO+r+ioVN8DI4Shd485AIx0rKTtbIWjjn6OuTXto6AXpVaFDnyxwalcy2cg/tz1O0MXgbRwIEzFJeSCYWhQYLt8V9lslirgQiMuQF4fLgvuM/eyCDIiDajn5EP/fzhYMlZw5Yn0s39VEJ8l0Sf0mvFrCIcAqBKTyLWZeEk+45wEGOeCez00MV4Bw==
+ 
 #script:
 # - curl -H "Authorization: apiToken $apiToken" https://api.shippable.com
 # - curl -H "Authorization: apiToken $apiToken" \-H "Content-Type: application/json" \-d "{\"projectId\": \"011d01\"}"https://api.shippable.com/workflow/enableRepoBuild
