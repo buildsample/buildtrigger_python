@@ -6,6 +6,8 @@ env:
  global:
    - projectID=5556c112f4e45f525dcef44a
    - secure: Bk/dspKsCtdNBR7bhYL1cex+FJ/My7W6a333wT65ZjMM2CRLTQNN3B6HN5pk2GXszaKWgklsyiUAf1c0XxqjGCuyevGvjeBIWJaJJGgtHnh29KP2xYtTba6o2S0dREbMNS1wmW2oTTwQVEIIshROdccBMNtqZYGO+r+ioVN8DI4Shd485AIx0rKTtbIWjjn6OuTXto6AXpVaFDnyxwalcy2cg/tz1O0MXgbRwIEzFJeSCYWhQYLt8V9lslirgQiMuQF4fLgvuM/eyCDIiDajn5EP/fzhYMlZw5Yn0s39VEJ8l0Sf0mvFrCIcAqBKTyLWZeEk+45wEGOeCez00MV4Bw==
+
+
  
 #script:
 # - curl -H "Authorization: apiToken $apiToken" https://api.shippable.com
