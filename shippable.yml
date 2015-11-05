@@ -6,6 +6,7 @@ python:
 env:
  global:
    - projectID=559d2b3f2e2ab50e64b59319
+   - buildId=563b3629708f7c0c00a1d54f
    - secure: Bk/dspKsCtdNBR7bhYL1cex+FJ/My7W6a333wT65ZjMM2CRLTQNN3B6HN5pk2GXszaKWgklsyiUAf1c0XxqjGCuyevGvjeBIWJaJJGgtHnh29KP2xYtTba6o2S0dREbMNS1wmW2oTTwQVEIIshROdccBMNtqZYGO+r+ioVN8DI4Shd485AIx0rKTtbIWjjn6OuTXto6AXpVaFDnyxwalcy2cg/tz1O0MXgbRwIEzFJeSCYWhQYLt8V9lslirgQiMuQF4fLgvuM/eyCDIiDajn5EP/fzhYMlZw5Yn0s39VEJ8l0Sf0mvFrCIcAqBKTyLWZeEk+45wEGOeCez00MV4Bw==
    - secure: pja5DUIvrQflKJ+hRiaa5oNoPNJnsBoJbogLKP/d2KCK1C5TJT8XHspgzZOINVNQvSzpjEppfKqnokBjkaqNUZaG5C1QqR+byOGAPZ/vFLM7EgNj7z+UEe8a1GJamyPj5tESQ2zuV/mBLE8Qd/IUiDmuwnXudd7MV6Bgzg3oCgF17THRou191bACS5QSnnSbfhHXr16YyEvM5B8PBgqksjnBtwuoS/O8MXk41Fjb1BeFA+2fLn86hHQsw2ivH5zyJGMgP+sGjCAR08bglZVZFTQ/F/0erVI7TsHUQNGm8MwHgQWVWZxhAMZQ/K5TYnmtEpykDzGKjj/9jiZdk1Isdw== 
 
@@ -18,3 +19,7 @@ script: true
 
 after_success:
 - 'curl -H "Authorization: apiToken $apiToken" -H "Content-Type: application/json" -d "{\"projectId\": \"$projectID\"}" https://apibeta.shippable.com/workflow/triggerBuild'
+- curl -X POST 'https://api.shippable.com/workflow/cancelBuild' \
+ -H "Content-Type: application/json" \
+ -H "Authorization: apiToken $token" \
+ -d "{\"buildId\" : \"$buildId\"}"
