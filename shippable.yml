@@ -19,4 +19,5 @@ script: true
 
 after_success:
 - 'curl -H "Authorization: apiToken $apiToken" -H "Content-Type: application/json" -d "{\"projectId\": \"$projectID\"}" https://apibeta.shippable.com/workflow/triggerBuild'
-- 'curl -X POST 'https://api.shippable.com/workflow/cancelBuild' \ -H "Content-Type: application/json" \ -H "Authorization: apiToken $token" \ -d "{\"buildId\" : \"$buildId\"}" '
+#- 'curl -X POST 'https://api.shippable.com/workflow/cancelBuild' \ -H "Content-Type: application/json" \ -H "Authorization: apiToken $token" \ -d "{\"buildId\" : \"$buildId\"}" '
+- 'curl -H "Authorization: apiToken $apiToken" -H "Content-Type: application/json" -d "{\"buildId\": \"$buildId"}" https://api.shippable.com/workflow/cancelBuild'
